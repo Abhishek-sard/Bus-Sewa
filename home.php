@@ -131,9 +131,42 @@
     </main>
 
 
-    <footer>
-        <p>&copy; 2025 My Website</p>
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>Sajilo Ticket</h3>
+                <p>Your trusted partner for hassle-free ticket booking. Explore the world with confidence and convenience!</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Register</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p>Email: support@sajiloticket.com</p>
+                <p>Phone: +977-123-456789</p>
+                <p>Address: Sunsari, Nepal</p>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="images/facebook-icon.png" alt="Facebook"></a>
+                    <a href="#"><img src="images/twitter-icon.png" alt="Twitter"></a>
+                    <a href="#"><img src="images/instagram-icon.png" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Sajilo Ticket. All Rights Reserved.</p>
+        </div>
     </footer>
+
 
     <script>
         let currentSlide = 0;
