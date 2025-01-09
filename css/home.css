@@ -1,0 +1,211 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #075b6b;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    /* Ensure navbar is on top */
+}
+
+.navbar .logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.navbar .logo a span {
+    font-weight: normal;
+}
+
+/* Large font size for S and T */
+.navbar .logo a .large {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+/* Different colors for each letter */
+.navbar .logo a span:nth-child(1) {
+    color: #FF6347;
+    /* Tomato red for 'S' */
+}
+
+.navbar .logo a span:nth-child(2) {
+    color: #32CD32;
+    /* Lime green for 'T' */
+}
+
+/* Navbar Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links li a:hover {
+    color: #4a0dd8;
+}
+
+.login-btn {
+    margin-right: 40px;
+    /* Adjusted margin-right */
+}
+
+.login-btn a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    /* Adjusted padding to prevent button from being too wide */
+    background-color: #4CAF50;
+    border-radius: 5px;
+    /* Slightly smaller border radius */
+    white-space: nowrap;
+    /* Ensure text stays on one line */
+}
+
+.login-btn a:hover {
+    background-color: #45a049;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+    text-align: center;
+    margin-top: 55px;
+    /* Offset for fixed navbar */
+}
+
+/* Content Wrapper for Text and Image Slider */
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin-top: 0;
+    /* Removed top margin to remove space between navbar and slider */
+}
+
+/* Text Content */
+.text-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.text-content h1 {
+    font-size: 40px;
+    color: #03b1f6;
+}
+
+.text-content p {
+    font-size: 20px;
+    color: #c0a902;
+}
+
+/* Image Slider */
+.image-slider {
+    flex: 1;
+    width: 100%;
+    max-width: 600px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.slider-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.slider-container img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    bottom: 0;
+    width: 100%;
+}
+/***cart section***********/
+
+.cart-section {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 columns */
+    gap: 20px;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.cart-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.cart-item:hover {
+    transform: translateY(-10px);
+}
+
+.cart-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.item-text {
+    font-size: 14px;
+    color: #333;
+    margin-top: 10px;
+}
+
+.add-to-cart-btn {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #45a049;
+}
