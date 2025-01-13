@@ -107,6 +107,7 @@
         </div>
         <div class="footer-bottom">
             <p>&copy; 2025 Sajilo Ticket. All Rights Reserved.</p>
+            <p>Abhishek sardar</p>
         </div>
     </footer>
 </body>
