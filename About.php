@@ -1,6 +1,14 @@
 <?php
 // Initialize dynamic content variables
+$siteName = "Sajilo Ticket";
+$missionStatement = "To make travel easy and accessible for everyone by providing a seamless ticket booking experience.";
+$visionStatement = "To be the leading travel ticket booking platform in Nepal, ensuring convenience and reliability for all travelers.";
 
+$teamMembers = [
+    ["name" => "Abhishek Sardar", "role" => "Founder & CEO", "bio" => "Passionate about technology and solving travel-related challenges."],
+    ["name" => "Donald trum", "role" => "CTO", "bio" => "Leading the tech team to build innovative solutions for hassle-free booking."],
+    ["name" => "Narendra modi", "role" => "Customer Support", "bio" => "Ensuring top-notch customer service and satisfaction."]
+];
 ?>
 
 <!DOCTYPE html>
@@ -10,7 +18,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - <?php echo $siteName; ?></title>
-    <link rel="stylesheet" href="css/About.css"> <!-- Adjust path based on your folder structure -->
+    <link rel="stylesheet" href="css/about.css">
 </head>
 
 <body>
@@ -61,7 +69,7 @@
             <blockquote>
                 "Sajilo Ticket made my travel planning so easy! The process was seamless, and the team was incredibly helpful."
             </blockquote>
-            <p>- Emily Roberts</p>
+            <p>- malla uncle</p>
         </section>
 
         <!-- Contact Information -->
@@ -73,7 +81,7 @@
         </section>
     </main>
 
-
+    <!-- Footer -->
     <footer class="site-footer">
         <div class="footer-container">
             <div class="footer-about">
@@ -99,17 +107,14 @@
             <div class="footer-social">
                 <h3>Follow Us</h3>
                 <div class="social-icons">
-                    <a href="#"><img src="images/facebook-icon.png" alt="Facebook"></a>
-                    <a href="#"><img src="images/twitter-icon.png" alt="Twitter"></a>
-                    <a href="#"><img src="images/instagram-icon.png" alt="Instagram"></a>
+                    <a href="#"><img src="images/facebook.jpg" alt="Facebook"></a>
+                    <a href="#"><img src="images/twitter.jpg" alt="Twitter"></a>
+                    <a href="#"><img src="images/insta.jpg" alt="Instagram"></a>
                 </div>
             </div>
         </div>
         <div class="footer-bottom">
             <p>&copy; 2025 Sajilo Ticket. All Rights Reserved.</p>
-            <p>Abhishek sardar</p>
-            <h1>this si just for push</h1>
-            <h2>Footer</h2>
         </div>
     </footer>
 </body>

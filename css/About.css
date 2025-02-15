@@ -1,55 +1,144 @@
-/* Footer Styles */
-.site-footer {
-    background-color: #075b6b;
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* Main container */
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Company Overview */
+.company-overview {
+    background: #007bff;
     color: white;
-    padding: 40px 20px;
-    font-size: 16px;
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Mission & Vision */
+.mission-vision {
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.mission-vision h2 {
+    color: #007bff;
+}
+
+/* Core Values */
+.core-values {
+    padding: 20px;
+    background: #f1f1f1;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.core-values h2 {
+    text-align: center;
+}
+
+.core-values ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.core-values ul li {
+    background: #007bff;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+/* Team Section */
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.team-member {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+/* Testimonials */
+.testimonials {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Contact Info */
+.contact-info {
+    text-align: center;
+    padding: 20px;
+    background: #007bff;
+    color: white;
+    border-radius: 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    /* Adjust size as needed */
+    height: 30px;
+    margin: 5px;
+    /* Adds spacing between icons */
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+    /* Slight zoom effect on hover */
+}
+
+
+/* Footer */
+.site-footer {
+    background: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
 }
 
 .footer-container {
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.footer-container div {
-    flex: 1;
-    min-width: 200px;
-    margin: 10px;
-}
-
-.footer-container h3 {
-    font-size: 20px;
-    margin-bottom: 15px;
-    color: #f2f2f2;
-}
-
-.footer-container p,
-.footer-container a {
-    font-size: 14px;
-    color: #d1d1d1;
-    line-height: 1.6;
-    text-decoration: none;
-}
-
-.footer-container a:hover {
-    color: #4CAF50;
 }
 
 .footer-links ul {
-    list-style: none;
+    list-style-type: none;
     padding: 0;
 }
 
-.footer-links li {
-    margin-bottom: 10px;
+.footer-links ul li a {
+    color: white;
+    text-decoration: none;
 }
 
-.footer-contact p {
-    margin-bottom: 8px;
+.footer-bottom {
+    margin-top: 20px;
+    border-top: 1px solid #555;
+    padding-top: 10px;
 }
-
-
-
