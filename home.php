@@ -21,8 +21,8 @@
                 <li><a href="#">Home</a></li>
                 <li><a href="About.php">AboutUs</a></li>
                 <li><a href="service.php">Services</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Register</a></li>
+                <li><a href="Contact.php">Contact</a></li>
+                <li><a href="Register.php">Register</a></li>
             </ul>
             <div class="login-btn">
                 <a href="#">Logout</a>
