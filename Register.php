@@ -36,7 +36,7 @@ $drivers = $conn->query("SELECT * FROM drivers");
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Driver Registration</title>
-    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="css/Register.css">
 </head>
 <body>
     <h2>Driver Registration</h2>
