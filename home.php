@@ -53,77 +53,77 @@
 
         <div class="cart-section">
             <div class="cart-item">
-                <img src="images/item1.jpg" alt="Item 1" class="cart-image">
+                <img src="images/bangalure.jpg" alt="Item 1" class="cart-image">
                 <p class="item-text">Item 1 Description</p>
                 <button class="add-to-cart-btn"> Add to Cart</button>
             </div>
             <div class="cart-item">
-                <img src="images/item2.jpg" alt="Item 2" class="cart-image">
+                <img src="images/basantapur.jpg" alt="Item 2" class="cart-image">
                 <p class="item-text">Item 2 Description</p>
                 <button class="add-to-cart-btn">Add to Cart</button>
             </div>
             <div class="cart-item">
-                <img src="images/item3.jpg" alt="Item 3" class="cart-image">
+                <img src="images/bihar.jpg" alt="Item 3" class="cart-image">
                 <p class="item-text">Item 3 Description</p>
                 <button class="add-to-cart-btn">Add to Cart</button>
             </div>
             <div class="cart-item">
-                <img src="images/item4.jpg" alt="Item 4" class="cart-image">
+                <img src="images/biratnagar.jpg" alt="Item 4" class="cart-image">
                 <p class="item-text">Item 4 Description</p>
                 <button class="add-to-cart-btn">Add to Cart</button>
             </div>
             <div class="cart-item">
-                <img src="images/item5.jpg" alt="Item 5" class="cart-image">
+                <img src="images/chennai.jpg" alt="Item 5" class="cart-image">
                 <p class="item-text">Item 5 Description</p>
                 <button class="add-to-cart-btn">Add to Cart</button>
             </div>
             <div class="cart-item">
-                <img src="images/item6.jpg" alt="Item 6" class="cart-image">
+                <img src="images/chitwan.jpg" alt="Item 6" class="cart-image">
                 <p class="item-text">Item 6 Description</p>
                 <button class="add-to-cart-btn">Add to Cart</button>
             </div>
             <div class="cart-item">
-                <img src="images/item7.jpg" alt="Item 7" class="cart-image">
+                <img src="images/dheli.jpg" alt="Item 7" class="cart-image">
                 <p class="item-text">Item 7 Description</p>
                 <button class="add-to-cart-btn">Add to Cart</button>
             </div>
             <div class="cart-item">
-                <img src="images/item8.jpg" alt="Item 8" class="cart-image">
+                <img src="images/itahari.jpg" alt="Item 8" class="cart-image">
                 <p class="item-text">Item 8 Description</p>
                 <button class="add-to-cart-btn">Add to Cart</button>
             </div>
             <div class="cart-item">
-                <img src="images/item9.jpg" alt="Item 9" class="cart-image">
+                <img src="images/kerala.jpg" alt="Item 9" class="cart-image">
                 <p class="item-text">Item 9 Description</p>
                 <button class="add-to-cart-btn">Add to Cart</button>
             </div>
             <div class="cart-item">
-                <img src="images/item10.jpg" alt="Item 10" class="cart-image">
+                <img src="images/mumbai.jpg" alt="Item 10" class="cart-image">
                 <p class="item-text">Item 10 Description</p>
                 <button class="add-to-cart-btn">Add to Cart</button>
             </div>
             <div class="cart-item">
-                <img src="images/item11.jpg" alt="Item 11" class="cart-image">
+                <img src="images/pokhara.jpg" alt="Item 11" class="cart-image">
                 <p class="item-text">Item 11 Description</p>
                 <button class="add-to-cart-btn">Add to Cart</button>
             </div>
             <div class="cart-item">
-                <img src="images/item12.jpg" alt="Item 12" class="cart-image">
+                <img src="images/sikkim.jpg" alt="Item 12" class="cart-image">
                 <p class="item-text">Item 12 Description</p>
                 <button class="add-to-cart-btn">Add to Cart</button>
             </div>
             <div class="cart-item">
-                <img src="images/item13.jpg" alt="Item 13" class="cart-image">
+                <img src="images/pathibhara.jpg" alt="Item 13" class="cart-image">
                 <p class="item-text">Item 13 Description</p>
                 <button class="add-to-cart-btn">Add to Cart</button>
             </div>
             <div class="cart-item">
-                <img src="images/item14.jpg" alt="Item 14" class="cart-image">
+                <img src="images/kathmandu.jpg" alt="Item 14" class="cart-image">
                 <p class="item-text">Item 14 Description</p>
                 <button class="add-to-cart-btn">Add to Cart</button>
             </div>
             <div class="cart-item">
-                <img src="images/item15.jpg" alt="Item 15" class="cart-image">
+                <img src="images/mustang.jpg" alt="Item 15" class="cart-image">
                 <p class="item-text">Item 15 Description</p>
                 <button class="add-to-cart-btn">Add to Cart</button>
             </div>
