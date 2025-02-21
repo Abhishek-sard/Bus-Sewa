@@ -41,9 +41,9 @@
             <!-- Image Slider Div -->
             <div class="image-slider">
                 <div class="slider-container">
-                    <img src="images/Thailand.jpg" alt="Image 1" class="slide">
-                    <img src="images/turkey.jpg" alt="Image 2" class="slide">
-                    <img src="images/vietnam.jpg" alt="Image 3" class="slide">
+                    <img src="images/bus6.jpg" alt="Image 1" class="slide">
+                    <img src="images/bus5.jpg" alt="Image 2" class="slide">
+                    <img src="images/bus4.jpg" alt="Image 3" class="slide">
                 </div>
             </div>
         </div>
