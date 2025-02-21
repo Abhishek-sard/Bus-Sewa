@@ -156,9 +156,9 @@
             <div class="footer-social">
                 <h3>Follow Us</h3>
                 <div class="social-icons">
-                    <a href="#"><img src="images/facebook-icon.png" alt="Facebook"></a>
-                    <a href="#"><img src="images/twitter-icon.png" alt="Twitter"></a>
-                    <a href="#"><img src="images/instagram-icon.png" alt="Instagram"></a>
+                    <a href="#"><img src="images/facebook.jpg" alt="Facebook"></a>
+                    <a href="#"><img src="images/twitter.jpg" alt="Twitter"></a>
+                    <a href="#"><img src="images/insta.jpg" alt="Instagram"></a>
                 </div>
             </div>
         </div>
