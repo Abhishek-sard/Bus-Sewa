@@ -80,7 +80,9 @@
             <div class="cart-item">
                 <img src="images/biratnagar.jpg" alt="Item 4" class="cart-image">
                 <p class="item-text">Biratnagar</p>
-                <button class="add-to-cart-btn">Book</button>
+                <a href="Booking/Biratnagar.php?destination=Biratnagar">
+                    <button class="add-to-cart-btn">Book</button>
+                </a>
             </div>
             <div class="cart-item">
                 <img src="images/chennai.jpg" alt="Item 5" class="cart-image">
