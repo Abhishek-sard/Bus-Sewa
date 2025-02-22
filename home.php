@@ -92,12 +92,16 @@
             <div class="cart-item">
                 <img src="images/chitwan.jpg" alt="Item 6" class="cart-image">
                 <p class="item-text">Chitwan</p>
-                <button class="add-to-cart-btn">Book</button>
+                <a href="Booking/Chitwan.php?destination=Chitwan">
+                    <button class="add-to-cart-btn">Book</button>
+                </a>
             </div>
             <div class="cart-item">
                 <img src="images/dheli.jpg" alt="Item 7" class="cart-image">
-                <p class="item-text">Dheli</p>
-                <button class="add-to-cart-btn">Book</button>
+                <p class="item-text">Delhi</p>
+                <a href="Booking/Delhi.php?destination=Delhi">
+                    <button class="add-to-cart-btn">Book</button>
+                </a>
             </div>
             <div class="cart-item">
                 <img src="images/itahari.jpg" alt="Item 8" class="cart-image">
@@ -107,7 +111,9 @@
             <div class="cart-item">
                 <img src="images/kerala.jpg" alt="Item 9" class="cart-image">
                 <p class="item-text">Kerala</p>
-                <button class="add-to-cart-btn">Book</button>
+                <a href="Booking/Kerala.php?destination=Kerala">
+                    <button class="add-to-cart-btn">Book</button>
+                </a>
             </div>
             <div class="cart-item">
                 <img src="images/mumbai.jpg" alt="Item 10" class="cart-image">
