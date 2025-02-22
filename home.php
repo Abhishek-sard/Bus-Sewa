@@ -118,17 +118,23 @@
             <div class="cart-item">
                 <img src="images/mumbai.jpg" alt="Item 10" class="cart-image">
                 <p class="item-text">Mumbai</p>
-                <button class="add-to-cart-btn">Book</button>
+                <a href="Booking/Kerala.php?destination=mumbai">
+                    <button class="add-to-cart-btn">Book</button>
+                </a>
             </div>
             <div class="cart-item">
                 <img src="images/pokhara.jpg" alt="Item 11" class="cart-image">
                 <p class="item-text">Pokhara</p>
-                <button class="add-to-cart-btn">Book</button>
+                <a href="Booking/Pokhara.php?destination=Pokhara">
+                    <button class="add-to-cart-btn">Book</button>
+                </a>
             </div>
             <div class="cart-item">
                 <img src="images/sikkim.jpg" alt="Item 12" class="cart-image">
                 <p class="item-text">Sikkim</p>
-                <button class="add-to-cart-btn">Book</button>
+                <a href="Booking/Sikkim.php?destination=Sikkim">
+                    <button class="add-to-cart-btn">Book</button>
+                </a>
             </div>
             <div class="cart-item">
                 <img src="images/pathibhara.jpg" alt="Item 13" class="cart-image">
@@ -138,12 +144,16 @@
             <div class="cart-item">
                 <img src="images/kathmandu.jpg" alt="Item 14" class="cart-image">
                 <p class="item-text">Kathmandu</p>
-                <button class="add-to-cart-btn">Book</button>
+                <a href="Booking/Kathmandu.php?destination=kathmandu">
+                    <button class="add-to-cart-btn">Book</button>
+                </a>
             </div>
             <div class="cart-item">
                 <img src="images/mustang.jpg" alt="Item 15" class="cart-image">
                 <p class="item-text">Mustang</p>
-                <button class="add-to-cart-btn">Book</button>
+                <a href="Booking/Mustang.php?destination=mustang">
+                    <button class="add-to-cart-btn">Book</button>
+                </a>
             </div>
         </div>
     </main>
