@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
     <link rel="stylesheet" href="css/home.css">
+
 </head>
 
 <body>
@@ -55,7 +56,13 @@
             <div class="cart-item">
                 <img src="images/bangalure.jpg" alt="Item 1" class="cart-image">
                 <p class="item-text">Bangalure</p>
-                <button class="add-to-cart-btn"> Book</button>
+                <!-- <button class="add-to-cart-btn"> Book</button> -->
+                <!-- <a href="Booking.php" class="add-to-cart-btn">Book</a> -->
+                <a href="Booking/booking.php?destination=Bangalure">
+                    <button class="add-to-cart-btn">Book</button>
+                </a>
+
+
             </div>
             <div class="cart-item">
                 <img src="images/basantapur.jpg" alt="Item 2" class="cart-image">
