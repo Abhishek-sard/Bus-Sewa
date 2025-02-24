@@ -21,6 +21,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['bookSeats'])) {
     $sql = "INSERT INTO bookings (name, email, phone, seats, total_price) 
             VALUES ('$name', '$email', '$phone', '$seats', $total_price)";
     if ($conn->query($sql) === TRUE) {
+        // Update Basantapur bookings count after a successful booking
+        $updateBookingCountSql = "UPDATE dashboard SET basantapur_bookings = basantapur_bookings + 1 WHERE id = 1";
+
+        if ($conn->query($updateBookingCountSql) === TRUE) {
+            echo "<script>alert('Booking Successful and Count Updated!'); window.location.reload();</script>";
+        } else {
+            echo "Error updating booking count: " . $conn->error;
+        }
+
         echo "<script>alert('Booking Successful!'); window.location.reload();</script>";
     } else {
         echo "Error: " . $conn->error;
@@ -130,6 +139,7 @@ $result = $conn->query("SELECT * FROM bookings");
         <p><strong>Total Price:</strong> ₹<span id="totalPrice">0</span></p>
 
         <input type="hidden" name="selectedSeats" id="selectedSeats" value="">
+
         <button type="submit" name="bookSeats">Confirm Booking</button>
     </form>
 

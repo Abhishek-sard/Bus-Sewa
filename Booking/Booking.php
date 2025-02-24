@@ -102,7 +102,7 @@ $result = $conn->query("SELECT * FROM bookings");
             <th>Phone</th>
             <th>Seats</th>
             <th>Total Price</th>
-            <th>Booking Date & Time</th>
+            <!-- <th>Booking Date & Time</th> -->
             <th>Actions</th>
         </tr>
         <?php while ($row = $result->fetch_assoc()) { ?>
@@ -113,7 +113,7 @@ $result = $conn->query("SELECT * FROM bookings");
                 <td><?php echo $row['phone']; ?></td>
                 <td><?php echo $row['seats']; ?></td>
                 <td>₹<?php echo $row['total_price']; ?></td>
-                <td><?php echo $row['booking_datetime']; ?></td>
+                <!-- <td><?php echo $row['booking_datetime']; ?></td> -->
                 <td>
                     <a href="booking.php?delete=<?php echo $row['id']; ?>" class="delete-btn">Delete</a>
                 </td>

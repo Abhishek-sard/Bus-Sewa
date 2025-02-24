@@ -1,10 +1,43 @@
 <?php
-// Example data (in a real scenario, this data would come from your database)
-$totalBookings = 100;  // Example total bookings
-$totalBusBookings = 40;  // Example bus bookings
-$totalBasantapurBookings = 30;  // Example Basantapur route bookings
-$totalBiharBookings = 20;  // Example Bihar route bookings
-$totalBiratnagarBookings = 10;  // Example Biratnagar route bookings
+// Database connection
+$servername = "localhost";
+$username = "root"; // Change this if needed
+$password = "";
+$database = "BUS_SEWA"; // Your database name
+
+$conn = new mysqli($servername, $username, $password, $database);
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+// Fetch total bookings
+$totalBookingsQuery = "SELECT COUNT(*) AS total FROM bookings";
+$result = $conn->query($totalBookingsQuery);
+$row = $result->fetch_assoc();
+$totalBookings = $row['total'];
+
+// Fetch bookings for each route
+$totalBusBookingsQuery = "SELECT COUNT(*) AS total FROM bookings WHERE route = 'Bus'";
+$result = $conn->query($totalBusBookingsQuery);
+$row = $result->fetch_assoc();
+$totalBusBookings = $row['total'];
+
+$totalBasantapurBookingsQuery = "SELECT COUNT(*) AS total FROM bookings WHERE route = 'Basantapur'";
+$result = $conn->query($totalBasantapurBookingsQuery);
+$row = $result->fetch_assoc();
+$totalBasantapurBookings = $row['total'];
+
+$totalBiharBookingsQuery = "SELECT COUNT(*) AS total FROM bookings WHERE route = 'Bihar'";
+$result = $conn->query($totalBiharBookingsQuery);
+$row = $result->fetch_assoc();
+$totalBiharBookings = $row['total'];
+
+$totalBiratnagarBookingsQuery = "SELECT COUNT(*) AS total FROM bookings WHERE route = 'Biratnagar'";
+$result = $conn->query($totalBiratnagarBookingsQuery);
+$row = $result->fetch_assoc();
+$totalBiratnagarBookings = $row['total'];
+
+$conn->close();
 ?>
 
 <!DOCTYPE html>
@@ -27,9 +60,7 @@ $totalBiratnagarBookings = 10;  // Example Biratnagar route bookings
                 <li><a href="#">Driver</a></li>
                 <li><a href="#">User</a></li>
                 <li><a href="#">Admin</a></li>
-               
             </ul>
-            <!-- <p>Abhishek Sardar</p> -->
         </div>
 
         <!-- Main Content -->
@@ -43,7 +74,7 @@ $totalBiratnagarBookings = 10;  // Example Biratnagar route bookings
                     <p><?php echo $totalBookings; ?></p>
                 </div>
                 <div class="stat-card">
-                    <h3>Bus Bookings</h3>
+                    <h3>Total Bus Bookings</h3>
                     <p><?php echo $totalBusBookings; ?></p>
                 </div>
                 <div class="stat-card">
@@ -58,6 +89,13 @@ $totalBiratnagarBookings = 10;  // Example Biratnagar route bookings
                     <h3>Biratnagar Bookings</h3>
                     <p><?php echo $totalBiratnagarBookings; ?></p>
                 </div>
+            </div>
+
+            <!-- Back Button -->
+            <div class="back-button">
+                <a href="../home.php">
+                    <button>Go Back</button>
+                </a>
             </div>
         </div>
     </div>
