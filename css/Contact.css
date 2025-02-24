@@ -7,15 +7,16 @@ body {
 
 header {
     text-align: center;
-    padding: 20px;
+    padding: 40px;
     background: #007bff;
     color: white;
+    margin-top: 50px;
 }
 
 main {
     width: 80%;
     margin: auto;
-    padding: 20px;
+    padding: 40px;
 }
 
 .contact-info {

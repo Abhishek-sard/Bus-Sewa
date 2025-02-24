@@ -8,14 +8,17 @@ $companyAddress = "Sunsari, Nepal";
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+<>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - <?php echo $siteName; ?></title>
     <link rel="stylesheet" href="css/Contact.css">
-</head>
+    <link rel="stylesheet" href="css/home.css">
+</>
 
 <body>
+    <?php include 'navbar.php'; ?> <!-- Include the navbar here -->
+
     <header>
         <h1>Contact Us</h1>
         <p>We’d love to hear from you! Get in touch with us for any inquiries or support.</p>

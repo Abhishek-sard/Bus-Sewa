@@ -1,3 +1,5 @@
+
+<?php include'navbar.php';?>
 <?php
 // Database connection
 $host = 'localhost';
@@ -38,6 +40,7 @@ $drivers = $conn->query("SELECT * FROM drivers");
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Driver Registration</title>
     <link rel="stylesheet" href="css/Register.css">
+    <link rel="stylesheet" href="css/home.css">
 </head>
 
 <body>

@@ -1,3 +1,5 @@
+<?php include 'navbar.php'; ?>
+
 <?php
 // Initialize dynamic content variables
 $siteName = "Sajilo Ticket";
@@ -6,8 +8,8 @@ $visionStatement = "To be the leading travel ticket booking platform in Nepal, e
 
 $teamMembers = [
     ["name" => "Abhishek Sardar", "role" => "Founder & CEO", "bio" => "Passionate about technology and solving travel-related challenges."],
-    ["name" => "Donald trum", "role" => "CTO", "bio" => "Leading the tech team to build innovative solutions for hassle-free booking."],
-    ["name" => "Narendra modi", "role" => "Customer Support", "bio" => "Ensuring top-notch customer service and satisfaction."]
+    ["name" => "Donald Trump", "role" => "CTO", "bio" => "Leading the tech team to build innovative solutions for hassle-free booking."],
+    ["name" => "Narendra Modi", "role" => "Customer Support", "bio" => "Ensuring top-notch customer service and satisfaction."]
 ];
 ?>
 
@@ -19,6 +21,7 @@ $teamMembers = [
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - <?php echo $siteName; ?></title>
     <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/home.css">
 </head>
 
 <body>
@@ -69,7 +72,7 @@ $teamMembers = [
             <blockquote>
                 "Sajilo Ticket made my travel planning so easy! The process was seamless, and the team was incredibly helpful."
             </blockquote>
-            <p>- malla uncle</p>
+            <p>- Malla Uncle</p>
         </section>
 
         <!-- Contact Information -->

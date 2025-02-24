@@ -1,6 +1,4 @@
-<?php
-// You can include any necessary PHP logic here
-?>
+<?php include 'navbar.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,23 +11,7 @@
 </head>
 
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="logo">
-                <a href="#"><span>S</span>ajilo <span>T</span>icket </a>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="About.php">AboutUs</a></li>
-                <li><a href="service.php">Services</a></li>
-                <li><a href="Contact.php">Contact</a></li>
-                <li><a href="Register.php">Register</a></li>
-            </ul>
-            <div class="login-btn">
-                <a href="#">Logout</a>
-            </div>
-        </nav>
-    </header>
+
 
     <main>
         <div class="content-wrapper">
