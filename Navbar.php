@@ -14,6 +14,6 @@ session_start();
         <li><a href="register.php">Register</a></li>
     </ul>
     <div class="login-btn">
-        <a href="logout.php">Logout</a>
+        <a href="Dashboard/Dashboard1.php">Dashboard</a>
     </div>
 </nav>
