@@ -27,11 +27,13 @@ $result = $conn->query($totalBasantapurBookingsQuery);
 $row = $result->fetch_assoc();
 $totalBasantapurBookings = $row['total'];
 
-$totalBiharBookingsQuery = "SELECT COUNT(*) AS total FROM bookings WHERE route = 'Bihar'";
-$result = $conn->query($totalBiharBookingsQuery);
-$row = $result->fetch_assoc();
-$totalBiharBookings = $row['total'];
+// Fetch Bihar bookings count
+// $totalBiharBookingsQuery = "SELECT COUNT(*) AS total FROM bookings WHERE route = 'Bihar'";
+// $result = $conn->query($totalBiharBookingsQuery);
+// $row = $result->fetch_assoc();
+// $totalBiharBookings = $row['total'];
 
+// Fetch Biratnagar bookings count
 $totalBiratnagarBookingsQuery = "SELECT COUNT(*) AS total FROM bookings WHERE route = 'Biratnagar'";
 $result = $conn->query($totalBiratnagarBookingsQuery);
 $row = $result->fetch_assoc();
@@ -83,7 +85,7 @@ $conn->close();
                 </div>
                 <div class="stat-card">
                     <h3>Bihar Bookings</h3>
-                    <p><?php echo $totalBiharBookings; ?></p>
+                    <!-- <p><?php echo $totalBiharBookings; ?></p> -->
                 </div>
                 <div class="stat-card">
                     <h3>Biratnagar Bookings</h3>

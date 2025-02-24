@@ -17,11 +17,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['bookSeats'])) {
     $seats = $_POST['selectedSeats'];
     $booking_date = $_POST['booking_date'];  // New Date Field
     $booking_time = $_POST['booking_time'];  // New Time Field
+    $route = $_POST['route'];  // Get the route value
 
     $total_price = count(explode(',', $seats)) * 1200;
 
-    $sql = "INSERT INTO bookings (name, email, phone, seats, total_price, booking_date, booking_time) 
-            VALUES ('$name', '$email', '$phone', '$seats', $total_price, '$booking_date', '$booking_time')";
+    $sql = "INSERT INTO bookings (name, email, phone, seats, total_price, booking_date, booking_time, route) 
+            VALUES ('$name', '$email', '$phone', '$seats', $total_price, '$booking_date', '$booking_time', '$route')";
+
     if ($conn->query($sql) === TRUE) {
         echo "<script>alert('Booking Successful!'); window.location.reload();</script>";
     } else {
@@ -119,6 +121,14 @@ $result = $conn->query("SELECT * FROM bookings");
         <label>Booking Time:</label>
         <input type="time" name="booking_time" required>
 
+        <label>Route:</label>
+        <select name="route" required>
+            <option value="Route 1">Route 1</option>
+            <option value="Route 2">Route 2</option>
+            <option value="Route 3">Route 3</option>
+            <!-- Add more routes as needed -->
+        </select>
+
         <h3>Select Your Seat:</h3>
         <div class="bus-layout">
             <?php
@@ -151,7 +161,7 @@ $result = $conn->query("SELECT * FROM bookings");
             <th>Seats</th>
             <th>Total Price</th>
             <th>Booking Date</th>
-            <!-- <th>Booking Time</th> -->
+            <th>Route</th> <!-- Added Route column -->
             <th>Actions</th>
         </tr>
         <?php while ($row = $result->fetch_assoc()) { ?>
@@ -163,7 +173,7 @@ $result = $conn->query("SELECT * FROM bookings");
                 <td><?php echo $row['seats']; ?></td>
                 <td>₹<?php echo $row['total_price']; ?></td>
                 <td><?php echo $row['booking_date']; ?></td>
-                <!-- <td><?php echo $row['booking_time']; ?></td> -->
+                <td><?php echo $row['route']; ?></td> <!-- Displaying Route -->
                 <td>
                     <a href="booking.php?delete=<?php echo $row['id']; ?>" class="delete-btn">Delete</a>
                 </td>
