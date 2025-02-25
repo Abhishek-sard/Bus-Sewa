@@ -51,8 +51,8 @@ $conn->close();
             <h2>Dashboard</h2>
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Driver</a></li>
-                <li><a href="#">User</a></li>
+                <li><a href="driver_details.php">Driver</a></li> <!-- Updated link -->
+                <li><a href="user_details.php">User</a></li> <!-- Updated link -->
                 <li><a href="#">Admin</a></li>
             </ul>
         </div>
