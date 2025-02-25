@@ -1,9 +1,9 @@
 <?php
 // Database connection
 $servername = "localhost";
-$username = "root"; // Change this if needed
+$username = "root";
 $password = "";
-$database = "BUS_SEWA"; // Your database name
+$database = "BUS_SEWA";
 
 $conn = new mysqli($servername, $username, $password, $database);
 if ($conn->connect_error) {
@@ -11,47 +11,39 @@ if ($conn->connect_error) {
 }
 
 // Fetch total bookings
+$totalBookings = 0;
 $totalBookingsQuery = "SELECT COUNT(*) AS total FROM bookings";
 $result = $conn->query($totalBookingsQuery);
-$row = $result->fetch_assoc();
-$totalBookings = $row['total'];
+if ($result) {
+    $row = $result->fetch_assoc();
+    $totalBookings = $row['total'];
+}
 
-// Fetch bookings for each route
-$totalBusBookingsQuery = "SELECT COUNT(*) AS total FROM bookings WHERE route = 'Bus'";
-$result = $conn->query($totalBusBookingsQuery);
-$row = $result->fetch_assoc();
-$totalBusBookings = $row['total'];
+// Fetch user counts based on roles
+$roles = ['Driver', 'User', 'Admin'];
+$roleCounts = [];
 
-$totalBasantapurBookingsQuery = "SELECT COUNT(*) AS total FROM bookings WHERE route = 'Basantapur'";
-$result = $conn->query($totalBasantapurBookingsQuery);
-$row = $result->fetch_assoc();
-$totalBasantapurBookings = $row['total'];
-
-// Fetch Bihar bookings count
-// $totalBiharBookingsQuery = "SELECT COUNT(*) AS total FROM bookings WHERE route = 'Bihar'";
-// $result = $conn->query($totalBiharBookingsQuery);
-// $row = $result->fetch_assoc();
-// $totalBiharBookings = $row['total'];
-
-// Fetch Biratnagar bookings count
-$totalBiratnagarBookingsQuery = "SELECT COUNT(*) AS total FROM bookings WHERE route = 'Biratnagar'";
-$result = $conn->query($totalBiratnagarBookingsQuery);
-$row = $result->fetch_assoc();
-$totalBiratnagarBookings = $row['total'];
+foreach ($roles as $role) {
+    $stmt = $conn->prepare("SELECT COUNT(*) AS total FROM users WHERE role = ?");
+    $stmt->bind_param("s", $role);
+    $stmt->execute();
+    $result = $stmt->get_result();
+    $row = $result->fetch_assoc();
+    $roleCounts[$role] = $row['total'];
+    $stmt->close();
+}
 
 $conn->close();
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard - Sajilo Ticket</title>
     <link rel="stylesheet" href="css/Dashboard.css">
 </head>
-
 <body>
     <div class="dashboard-container">
         <!-- Sidebar -->
@@ -76,20 +68,16 @@ $conn->close();
                     <p><?php echo $totalBookings; ?></p>
                 </div>
                 <div class="stat-card">
-                    <h3>Total Bus Bookings</h3>
-                    <p><?php echo $totalBusBookings; ?></p>
+                    <h3>Registered Drivers</h3>
+                    <p><?php echo $roleCounts['Driver'] ?? 0; ?></p>
                 </div>
                 <div class="stat-card">
-                    <h3>Basantapur Bookings</h3>
-                    <p><?php echo $totalBasantapurBookings; ?></p>
+                    <h3>Registered Users</h3>
+                    <p><?php echo $roleCounts['User'] ?? 0; ?></p>
                 </div>
                 <div class="stat-card">
-                    <h3>Bihar Bookings</h3>
-                    <!-- <p><?php echo $totalBiharBookings; ?></p> -->
-                </div>
-                <div class="stat-card">
-                    <h3>Biratnagar Bookings</h3>
-                    <p><?php echo $totalBiratnagarBookings; ?></p>
+                    <h3>Registered Admins</h3>
+                    <p><?php echo $roleCounts['Admin'] ?? 0; ?></p>
                 </div>
             </div>
 
@@ -102,5 +90,4 @@ $conn->close();
         </div>
     </div>
 </body>
-
 </html>
